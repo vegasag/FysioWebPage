@@ -135,7 +135,7 @@
   "defaultProject": "FysioWebPage",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "styl"
+      "styleext": "scss"
     }
   }
 }
