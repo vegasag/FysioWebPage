@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 25%;
+    padding: 20px;
+  }
+
+  /* Main column */
+.main {
+    flex: 50%;
+    padding: 20px;
+    
+  }
+
