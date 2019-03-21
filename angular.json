@@ -132,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "FysioWebPage"
+  "defaultProject": "FysioWebPage",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "styl"
+    }
+  }
 }

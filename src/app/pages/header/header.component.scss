@@ -1,0 +1,22 @@
+/* Style the header */
+.header {
+    color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+  }
+
+.logo{
+    padding: 20px;
+    width: 50px;
+}
+
+.logo.right{
+    position: relative;
+    left: 85%;
+}
+
+
+.logo.left{
+    position: relative;
+    left: 2%;
+}
