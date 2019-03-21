@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-navigator',
@@ -13,7 +13,13 @@ export class NavigatorComponent implements OnInit {
   ];
 
   constructor() { }
+  @Output('cancellation') cancellation = new EventEmitter();
 
   ngOnInit() {}
 
+  
+  onBgClick() {
+    console.log("test");
+    this.cancellation.emit();
+  }
 }

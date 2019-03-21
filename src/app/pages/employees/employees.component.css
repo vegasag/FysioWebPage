@@ -1,0 +1,15 @@
+img{
+    position: center;
+    height: 30%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container > div {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+  }

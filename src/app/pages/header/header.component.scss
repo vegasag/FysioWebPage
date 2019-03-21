@@ -10,13 +10,13 @@
     width: 50px;
 }
 
-.logo.right{
-    position: relative;
-    left: 85%;
-}
-
-
 .logo.left{
     position: relative;
     left: 2%;
+}
+
+button {
+    outline: none;
+    position: relative;
+    left: 85%;
 }

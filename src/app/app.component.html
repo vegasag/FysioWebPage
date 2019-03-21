@@ -1,8 +1,11 @@
 <div>
-  <app-header></app-header>
-  <app-landing-page></app-landing-page>
-  <app-navigator></app-navigator>
-  <app-employees></app-employees>
-  <app-contact-us></app-contact-us>
+  <app-navigator *ngIf="showNavigationMenu" (cancellation)="showNavigationMenu = false"></app-navigator>
+  <div >
+    <app-header (ExploreContent)="showNavigationMenu = true"></app-header>
+    <app-landing-page></app-landing-page>
+    <app-employees></app-employees>
+    <app-contact-us></app-contact-us>
+
+  </div>
 </div>
   
