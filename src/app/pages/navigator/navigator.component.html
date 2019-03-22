@@ -14,9 +14,9 @@
 <div class="navigator-container" appEscCencelation (appEscCancelation)="onBgClick()" (click)="onBgClick()" >
     <div class="navLinks">
       <div *ngFor="let nav of navLinks" class="navLink">
-        <a href={{nav.href}}>
-          {{nav.displayName}}
-        </a>
+          <a class="refBox" href={{nav.href}}>
+            {{nav.displayName}}
+          </a>
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <div>
-  <app-navigator *ngIf="showNavigationMenu" (cancellation)="showNavigationMenu = false"></app-navigator>
+    <app-navigator *ngIf="showNavigationMenu" (cancellation)="showNavigationMenu = false"></app-navigator>
   <div >
-    <app-header (ExploreContent)="showNavigationMenu = true"></app-header>
+    <app-header (cancellation)="isOpen = false" (ExploreContent)="showNavigationMenu = true"></app-header>
     <app-landing-page></app-landing-page>
     <app-employees></app-employees>
     <app-contact-us></app-contact-us> 

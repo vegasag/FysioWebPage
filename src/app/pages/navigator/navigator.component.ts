@@ -7,9 +7,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class NavigatorComponent implements OnInit {
   navLinks = [
-    { displayName: 'Hjem', href: '#test1' },
-    { displayName: 'Ansatte', href: '#test2' },
-    { displayName: 'Kontakt oss', href: '#test3' },
+    { displayName: 'Hjem', href: '#LandingPage' },
+    { displayName: 'Ansatte', href: '#Employees' },
+    { displayName: 'Kontakt oss', href: '#ContactUs' },
   ];
 
   constructor() { }
@@ -19,7 +19,6 @@ export class NavigatorComponent implements OnInit {
 
   
   onBgClick() {
-    console.log("test");
     this.cancellation.emit();
   }
 }
