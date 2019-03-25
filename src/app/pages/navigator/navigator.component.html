@@ -1,16 +1,3 @@
-<!-- <ul class="list-unstyled">
-    <li>
-      <div *ngFor="let nav of navLinks">
-        <li>
-          <h5><a mdbPageScroll href={{nav.href}}>{{nav.displayName}}</a></h5>
-        </li>
-      </div>
-    </li>
-    <br>
-  </ul> 
- -->
-
-
 <div class="navigator-container" appEscCencelation (appEscCancelation)="onBgClick()" (click)="onBgClick()" >
     <div class="navLinks">
       <div *ngFor="let nav of navLinks" class="navLink">

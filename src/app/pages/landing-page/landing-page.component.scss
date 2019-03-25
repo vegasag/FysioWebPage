@@ -22,30 +22,25 @@
   animation: 1s ease-in-out 0.2s both leftToRight;
 }
 
-.dp-logo {
-  font-size: 2rem;
-  animation: 1s ease-in-out 0.2s both fadeIn;
-}
+// .navbar {
+//   // width: 100%;
+//   font-size: 2rem;
+//   padding: 1.6rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.navbar {
-  // width: 100%;
-  font-size: 2rem;
-  padding: 1.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-items {
-  .nav-item {
-    display: inline-block;
-    padding: 0.2rem 0;
-    margin: 0.6rem 1rem;
-    user-select: none;
-    cursor: pointer;
-    text-decoration: none;
-  }
-}
+// .nav-items {
+//   .nav-item {
+//     display: inline-block;
+//     padding: 0.2rem 0;
+//     margin: 0.6rem 1rem;
+//     user-select: none;
+//     cursor: pointer;
+//     text-decoration: none;
+//   }
+// }
 
 .container {
   display: flex;
@@ -63,14 +58,6 @@
   padding: 1.6rem;
   font-weight: normal;
   animation: 1s ease-in-out 0.2s both fadeIn;
-}
-
-.quote {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
-  padding: 1rem;
-  padding-top: 0rem;
-  animation: 1s ease-in-out 0.4s both fadeIn;
 }
 
 .name {
@@ -130,53 +117,6 @@
   }
 }
 
-.special-btn {
-  min-width: 15rem;
-  line-height: 2.2;
-  font-size: 1.4rem;
-  padding: 0.5rem;
-  margin-top: 2rem;
-  color: #fff;
-  border: none;
-  outline: none;
-  border-radius: 100rem;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-  animation: fadeIn 1s ease-in-out 1s both;
-  box-shadow: 7px 5px 8px 0 rgba(0, 0, 0, .31);
-  position: relative;
-  span {
-    position: relative;
-    transform: translateX(0.7rem);
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
-  }
-  &:hover {
-    animation-play-state: paused;
-    &::after {
-      transform: translateX(0.2rem);
-      opacity: 1;
-    }
-    span {
-      transform: translateX(-0.2rem);
-    }
-  }
-  &:active {
-    transform: scale(0.8);
-    box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.31);
-  }
-  &::after {
-    content: '\00bb';
-    position: relative;
-    opacity: 0;
-    vertical-align: sub;
-    font-size: 2.7rem;
-    line-height: 0;
-    transform: translateX(25px);
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
-  }
-}
 
 .stick {
   flex: 1;
