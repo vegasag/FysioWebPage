@@ -11,14 +11,16 @@ export class NavigatorComponent implements OnInit {
     { displayName: 'Ansatte', href: '#Employees' },
     { displayName: 'Kontakt oss', href: '#ContactUs' },
   ];
+  isOpen: boolean = false; 
 
   constructor() { }
-  @Output('cancellation') cancellation = new EventEmitter();
 
   ngOnInit() {}
-
-  
   onBgClick() {
-    this.cancellation.emit();
+    this.isOpen = !this.isOpen;
   }
+  toggleOpen(){
+    this.isOpen = !this.isOpen;
+  }
+
 }

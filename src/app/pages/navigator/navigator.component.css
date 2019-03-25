@@ -53,3 +53,27 @@
     text-decoration: none;
   }
 
+  .header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    color: #f1f1f1;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+
+  .logo{
+    vertical-align: middle;
+    height: 45px;
+}
+
+.hamburger {
+    outline: none;
+    position: relative;
+    height: 100%;
+
+}

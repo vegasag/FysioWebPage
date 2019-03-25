@@ -2,8 +2,13 @@
 
 // @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 body{
     background-color: rgba(3, 71, 65, 0.774);
+    margin: 0px;
   }
 
 h1, h2{

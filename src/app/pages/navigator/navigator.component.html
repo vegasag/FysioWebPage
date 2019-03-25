@@ -1,10 +1,21 @@
-<div class="navigator-container" appEscCencelation (appEscCancelation)="onBgClick()" (click)="onBgClick()" >
-    <div class="navLinks">
-      <div *ngFor="let nav of navLinks" class="navLink">
-          <a class="refBox" href={{nav.href}}>
-            {{nav.displayName}}
-          </a>
-      </div>
+<div class="header">
+  <a href=#LandingPage>
+    <img class="logo left" src="/assets/images/logo.png"/>
+  </a>
+  <button (click)="toggleOpen()" [ngClass]="{'is-active': isOpen}" class="hamburger hamburger--spin" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+</div>
+
+<div *ngIf="isOpen" class="navigator-container" appEscCencelation (appEscCancelation)="onBgClick()"
+  (click)="onBgClick()">
+  <div class="navLinks">
+    <div *ngFor="let nav of navLinks" class="navLink">
+      <a class="refBox" href={{nav.href}}>
+        {{nav.displayName}}
+      </a>
     </div>
   </div>
-    
+</div>

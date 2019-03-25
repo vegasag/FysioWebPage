@@ -6,7 +6,6 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { NavigatorComponent } from './pages/navigator/navigator.component';
 import { EmployeesComponent } from './pages/employees/employees.component';
-import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { FooterComponent } from './pages/footer/footer.component';
     ContactUsComponent,
     NavigatorComponent,
     EmployeesComponent,
-    HeaderComponent,
     FooterComponent
   ],
   imports: [
