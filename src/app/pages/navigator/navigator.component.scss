@@ -61,12 +61,19 @@
     color: #f1f1f1;
     width: 100%;
     position: fixed;
-    height: 50px;
-    padding: 0 1rem;
-    margin-top: 1rem;
+    height: 55px;
+    background-color: rgba(242, 245, 247, 1);
+    box-shadow: none;
   }
 
+.header.close-topBar{
+  box-shadow: rgba(0,0,0,0.07) 0px 4px 10px 0px;
+
+}
+
   .logo{
+    padding: 0 1rem;
+    margin-top: 1rem 0;
     vertical-align: middle;
     height: 45px;
 }
