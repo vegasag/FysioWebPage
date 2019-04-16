@@ -7,6 +7,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { NavigatorComponent } from './pages/navigator/navigator.component';
 import { EmployeesComponent } from './pages/employees/employees.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { FooterComponent } from './pages/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

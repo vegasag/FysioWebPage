@@ -1,4 +1,4 @@
-<div class="header" @shadowLineVisible [ngClass]="{'close-topBar':shadowLineVisible}">
+<div class="header" [ngClass]="{'close-topBar':shadowLineVisible}">
   <a href=#LandingPage>
     <img class="logo left"  [ngClass]="{'close-topBar':shadowLineVisible}" [ngClass]="{'open-topBar':!shadowLineVisible}" src="/assets/images/logo.svg"/>
   </a>
@@ -11,7 +11,7 @@
 
 <div *ngIf="isOpen" class="navigator-container" appEscCencelation (appEscCancelation)="onBgClick()"
   (click)="onBgClick()">
-  <div class="navLinks">
+  <div class="navLinks" @slideIn>
     <div *ngFor="let nav of navLinks" class="navLink">
       <a class="refBox" href={{nav.href}}>
         {{nav.displayName}}
