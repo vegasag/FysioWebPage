@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -11,11 +12,18 @@ body{
     margin: 0px;
   }
 
-h1, h2{
-    color: #f89406;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
 }
-p, h3{
-  color: rgb(0, 0, 0);
+
+
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 
@@ -26,6 +34,10 @@ p, h3{
   
   .container {
     padding-top: 10px;
+    width:100%;
+    padding: 50px;
+    max-width: 1310px;
+    margin: auto;
   }
   
   .pointable {

@@ -1,9 +1,5 @@
-img{
-    position: center;
-    height: 30%;
-}
-
 .flex-container {
+    max-width: 1310px;
     display: flex;
     flex-wrap: nowrap;
   }
@@ -14,5 +10,23 @@ img{
     text-align: center;
   }
 
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  
+
+img{
+  max-height: 100%;
+  /* box-shadow: 10px 10px 5px rgba(0,0,0,0.6); */
+}
+
+.picture {
+  max-width: 100%;
+  margin: 0 0 0 5%;
+}
+
+.text {
+  width: 25%;
+  padding-left: 15px;
+}

@@ -16,6 +16,16 @@
 .main {
     flex: 50%;
     padding: 20px;
-    
   }
 
+.textBox {
+  height: 40%; 
+  padding: 0 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+.sendBox {
+  border: 5px solid gray;
+  margin: 0;
+}

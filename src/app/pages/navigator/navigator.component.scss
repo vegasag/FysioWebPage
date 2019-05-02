@@ -19,6 +19,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    scroll-behavior: smooth;
+
   }
 
 .refBox{
@@ -40,12 +42,12 @@
   background: rgba(#f8f8f8, 0.5);
   cursor: pointer;
   border-radius: 0.5rem;
-  /* @media (max-width: 1300px) {
-    width: 60%;
-  }
-  @media (max-width: 640px) {
-    width: 100%;
-  } */
+  // @media (max-width: 1300px) {
+  //   width: 60%;
+  // }
+  // @media (max-width: 640px) {
+  //   width: 100%;
+  // } 
 }
 
   .navLink>* {
@@ -62,7 +64,7 @@
     width: 100%;
     position: fixed;
     height: 80px;
-    background-color: rgba(242, 245, 247, 1);
+    background-color: transparent;
     box-shadow: none;
   }
 
@@ -70,6 +72,8 @@
   transition: all 0.3s;
   box-shadow: rgba(0,0,0,0.07) 0px 4px 10px 0px;
   height: 55px; 
+  background-color: rgba(242, 245, 247, 1);
+
 }
 
 .logo{

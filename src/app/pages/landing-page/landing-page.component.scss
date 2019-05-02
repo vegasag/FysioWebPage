@@ -1,25 +1,9 @@
 .root-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  // height: 100vh;
   // width: 100vw;
   background-size: cover;
-}
-
-.overlay {
-  height: 100vh;
-  // width: 100vw;
-  background-size: cover;
-  overflow: hidden;
-  z-index: -1;
-  display: block;
-  position: fixed;
-  right: 0;
-  top: 0;
-  pointer-events: none;
-  clip-path: ellipse(50vw 40vh at 50% 50%);
-  transform: scale(2) translate(27vw, -18vh) rotate(335deg);
-  animation: 1s ease-in-out 0.2s both leftToRight;
 }
 
 .logo-img{
@@ -28,25 +12,6 @@
   height: 8em;
 }
 
-// .navbar {
-//   // width: 100%;
-//   font-size: 2rem;
-//   padding: 1.6rem;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .nav-items {
-//   .nav-item {
-//     display: inline-block;
-//     padding: 0.2rem 0;
-//     margin: 0.6rem 1rem;
-//     user-select: none;
-//     cursor: pointer;
-//     text-decoration: none;
-//   }
-// }
 
 .container {
   display: flex;
@@ -55,198 +20,15 @@
   justify-content: center;
   align-items: center;
   height: 60%;
-  font-size: 1.6rem;
   margin-top: 5%;
-}
-
-.short-bio {
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  font-weight: normal;
-  animation: 1s ease-in-out 0.2s both fadeIn;
-}
-
-.name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.4rem;
-  font-weight: bold;
-  line-height: 1.6;
-  padding-top: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  word-spacing: 0.2rem;
-  text-align: center;
-  margin-bottom: -2.5rem;
-  animation: 1s ease-in-out 0.6s both fadeIn;
-  &:hover {
-    .strip::after {
-      left: -1rem;
-    }
-    .strip::before {
-      left: 1rem;
-    }
-  }
-}
-
-.strip {
-  display: inline-block;
-  position: relative;
-  width: 28rem;
-  margin: auto;
-  margin-bottom: 2rem;
-  animation: 1s ease-in-out 0.8s both fadeIn;
-  &::before {
-    transition: 0.3s all ease-in-out;
-    content: '';
-    position: absolute;
-    display: inline-block;
-    height: 2px;
-    background-color: #e74c3c;
-    margin: 2px 0;
-    width: 100%;
-    margin: auto;
-    top: 0;
-    left: -1rem;
-  }
-  &::after {
-    transition: 0.3s all ease-in-out;
-    position: absolute;
-    display: inline-block;
-    content: '';
-    height: 2px;
-    background-color: #e74c3c;
-    margin: 2px 0;
-    width: 100%;
-    margin: auto;
-    top: 4px;
-    left: 1rem;
-  }
-}
-
-
-.stick {
-  flex: 1;
-  margin-top: -1rem;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: -1;
-  animation: 1s ease-in-out 1s both fadeIn;
-  &::after {
-    content: '';
-    height: 200vh;
-    width: 1.6rem;
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    z-index: 5;
-    transform: translate(-50%);
-    box-shadow: 7px 5px 8px 0 rgba(0, 0, 0, .31);
-  }
-  .stick-design {
-    padding: 1.4rem;
-    position: absolute;
-    left: 50%;
-    min-width: 8.5rem;
-    top: 3.5rem;
-    border-radius: 100rem;
-    transform: translate(-50%);
-    z-index: 6;
-    box-shadow: 13px 0px 20px 0 rgba(0, 0, 0, 0.2);
-    transition: 1s all ease-in-out;
-    &::after {
-      content: '';
-      height: 0.8rem;
-      width: 0.8rem;
-      position: absolute;
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
-.tada-animation {
-  animation: tada 1s ease-in-out 0s 2 normal both;
-}
-
-@keyframes leftToRight {
-  0% {
-    display: relative;
-    opacity: 0.1;
-    left: -20%;
-  }
-  100% {
-    display: relative;
-    opacity: 1;
-    left: 0%;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes tada {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  10% {
-    transform: scale(1.1) rotate(-4deg);
-  }
-  20% {
-    transform: scale(1.1) rotate(4deg);
-  }
-  30% {
-    transform: scale(1.1) rotate(-4deg);
-  }
-  40% {
-    transform: scale(1.1) rotate(4deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(-4deg);
-  }
-  60% {
-    transform: scale(1.1) rotate(4deg);
-  }
-  70% {
-    transform: scale(1.1) rotate(-4deg);
-  }
-  80% {
-    transform: scale(1.1) rotate(4deg);
-  }
-  90% {
-    transform: scale(1.1) rotate(-4deg);
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-
-@keyframes stripAnimation {
-  0% {
-    transform: translateX(-10px) rotateZ(0deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px) rotateZ(-16deg);
-    opacity: 1;
-  }
 }
 
 .row {  
   display: flex;
   flex-wrap: wrap;
   height: 30%;
+  max-width: 1310px;
+  position: relative;
 }
 
 .side-visning {
@@ -254,3 +36,4 @@
   padding: 20px;
   text-align: center;
 }
+
