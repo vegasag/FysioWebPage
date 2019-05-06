@@ -26,14 +26,14 @@
   </div>
   <div class="row">
     <div class="kart">
-      <h2> KART </h2>
-      <div class="textBox">
-        <p>
-          Her kommer Google maps kart.
-        </p>
-      </div>
+      <!-- <h2> KART </h2> -->
+      <agm-map [zoom]="zoom" [mapTypeControl]='true' [fullscreenControl]='true' [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng">
+            <agm-info-window>Eide Fysioterapi</agm-info-window>
+        </agm-marker>
+      </agm-map>
     </div>
   </div>
 </div>
 
-<div style="height: 100px"> </div>
+<div style="height: 250px"> </div>

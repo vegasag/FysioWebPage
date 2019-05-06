@@ -14,9 +14,9 @@
     /* padding: 20px; */
   }
 
-.textBox {
-  width: 100%;
-  height: 200px; 
-  padding: 0 10px;
-  border: 5px solid gray;
+
+agm-map {
+  height: 400px;
+  width: 80%;
 }
+

@@ -8,7 +8,7 @@ import { NavigatorComponent } from './pages/navigator/navigator.component';
 import { EmployeesComponent } from './pages/employees/employees.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -22,6 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBoL1-bbuhOldVopYxMCl1X_fDUeoJnY84'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
