@@ -84,7 +84,7 @@ export class NavigatorComponent implements OnInit {
   
   onWindowScroll(){
     let number = window.pageYOffset || document.documentElement.scrollTop
-    if (number < 100) {
+    if (number < 150) {
       this.shadowLineVisible = false;
     }
     else if (number > 10) {
