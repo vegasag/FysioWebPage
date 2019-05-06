@@ -1,31 +1,22 @@
 
-/* Column container */
 .row {  
     display: flex;
     flex-wrap: wrap;
   }
   
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
   .side {
     flex: 25%;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
-  /* Main column */
-.main {
+.kart {
     flex: 50%;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
 .textBox {
-  height: 40%; 
+  width: 100%;
+  height: 200px; 
   padding: 0 10px;
   border: 5px solid gray;
-  margin: 0;
-}
-
-.sendBox {
-  border: 5px solid gray;
-  margin: 0;
 }
