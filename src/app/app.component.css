@@ -14,3 +14,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media (max-width: 1320px) {
+    .main-content{
+        width: 100%;
+        float: right;
+    }
+    .side-header{
+        display: none;
+    }
+}

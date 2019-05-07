@@ -20,3 +20,14 @@ agm-map {
   width: 80%;
 }
 
+@media (max-width: 992px) {
+  agm-map {
+    height: 300px;
+    width: 100%;
+  }
+}
+@media (max-width: 730px) {
+  .side {
+    flex: 100%;
+  }
+}

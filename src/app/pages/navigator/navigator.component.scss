@@ -95,3 +95,23 @@
     padding: 0 5rem 0 0;
 
 }
+
+
+@media (max-width: 1320px) {
+  .header{
+    width: 100%;
+  }
+  .hamburger{
+    padding-right: 1rem;
+  }
+  .logo{
+    padding-left: 1rem;
+    margin:0;
+  }
+  .navLink{
+    font-size: 18px;
+  }
+  .logo.close-topBar{
+    height: 30px;
+  }
+}

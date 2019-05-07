@@ -68,8 +68,10 @@ export class NavigatorComponent implements OnInit {
     { displayName: 'Ansatte', href: '#Employees' },
     { displayName: 'Kontakt oss', href: '#ContactUs' },
   ];
-  isOpen: boolean = false; 
+  isOpen: boolean = false;
   shadowLineVisible: boolean = false;
+  isSmallScreen: boolean = false;
+  isLargeScreen: boolean = false;
   constructor() { }
 
   ngOnInit() {}
@@ -79,12 +81,28 @@ export class NavigatorComponent implements OnInit {
   toggleOpen(){
     this.isOpen = !this.isOpen;
   }
+  
+  calculateCorrectScreenSize() {
+    if (window.innerWidth < 768) {
+      this.isSmallScreen = true;
+    }
+    if (window.innerWidth > 768) {
+      this.isLargeScreen = true;
+    }
+  }
+
 
   @HostListener("window:scroll",[])
-  
+
   onWindowScroll(){
+    this.calculateCorrectScreenSize();
+    let pixelHeightBeforeShowLine = 150;
+    if (this.isSmallScreen) { pixelHeightBeforeShowLine = 50 }
+    else {
+      pixelHeightBeforeShowLine = 150; 
+    }
     let number = window.pageYOffset || document.documentElement.scrollTop
-    if (number < 150) {
+    if (number < pixelHeightBeforeShowLine) {
       this.shadowLineVisible = false;
     }
     else if (number > 10) {

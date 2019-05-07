@@ -37,3 +37,26 @@
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  .logo-img{
+    height: 7em;
+  }
+  .side-visning{
+    flex: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .logo-img{
+    height: 6em;
+  }
+}
+@media (max-width: 450px) {
+  .logo-img{
+    height: 5em;
+  }
+}
+@media (max-width: 350px) {
+  .logo-img{
+    height: 4em;
+  }
+}

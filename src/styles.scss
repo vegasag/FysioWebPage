@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-// @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "./assets/dist/hamburgers.css";
 
 * {
   box-sizing: border-box;
@@ -17,6 +17,7 @@ body{
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+  hyphens: auto;
 }
 
 
@@ -36,7 +37,7 @@ p{
   .container {
     padding-top: 10px;
     width:100%;
-    padding: 50px;
+    padding: 50px 50px 0;
     max-width: 1310px;
     margin: auto;
   }
@@ -66,28 +67,12 @@ p{
     background-color: #f89406;
   }
 
-  /* .view {
-    background: url("https://mdbootstrap.com/img/Photos/Others/img (42).jpg")no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-}
-@media (min-width: 768px) {
-    .view {
-        overflow: visible;
-        margin-top: -56px;
+  
+  @media (max-width: 992) {
+    .container{
+      max-width: 992px;
+      padding: 50px 15px 0;
+      margin: 0;
     }
-}
-.navbar {
-    z-index: 1;
-}
-.navbar {
-    background-color: transparent;
-}
-.top-nav-collapse {
-    background-color: #4285F4;
-}
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: #4285F4;
-    }
-} */
+  }
+
