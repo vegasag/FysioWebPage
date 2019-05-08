@@ -64,9 +64,9 @@ import {
 })
 export class NavigatorComponent implements OnInit {
   navLinks = [
-    { displayName: 'Hjem', href: '#LandingPage' },
-    { displayName: 'Ansatte', href: '#Employees' },
-    { displayName: 'Kontakt oss', href: '#ContactUs' },
+    { displayName: 'Hjem', href: '#Forside' },
+    { displayName: 'Om oss', href: '#OmOss' },
+    { displayName: 'Kontakt oss', href: '#KontaktOss' },
   ];
   isOpen: boolean = false;
   shadowLineVisible: boolean = false;

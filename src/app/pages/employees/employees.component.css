@@ -27,9 +27,15 @@ img{
   /* margin: 0 0 0 5%; */
 }
 
+
 .text {
   flex: 50%;
   padding-left: 15px;
+}
+
+.text > h2{
+  font-weight: bold; 
+
 }
 
 @media (max-width: 992px) {

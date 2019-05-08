@@ -1,7 +1,11 @@
-<div id="ContactUs" class="container" style="height: 500px;">
+<div id="KontaktOss" class="container" style="height: 500px;">
   <div class="row">
+    <h1>KONTAKT OSS</h1>
+  </div>
+  <div class="row">
+
     <div class="side">
-      <h2>KONTAKTINFORMASJON</h2>
+      <h2>Kontaktinformasjon</h2>
       <p>
         <strong>EIDE Fysioterapi</strong>
         <br>
@@ -14,7 +18,7 @@
       <br>
     </div>
     <div class="side">
-      <h2>ÅPNINGSTIDER</h2>
+      <h2>Åpningstider</h2>
       <p>
         Man-fre: 8.00-15:30
         <br>
@@ -25,15 +29,14 @@
     </div>
   </div>
   <div class="row">
-    <div class="kart">
-      <!-- <h2> KART </h2> -->
-      <agm-map [zoom]="zoom" [mapTypeControl]='true' [fullscreenControl]='true' [latitude]="lat" [longitude]="lng">
-        <agm-marker [latitude]="lat" [longitude]="lng">
-            <agm-info-window>Eide Fysioterapi</agm-info-window>
-        </agm-marker>
-      </agm-map>
-    </div>
+    <h2> Kart </h2>
+  </div>
+  <div class="row">
+    <agm-map [zoom]="zoom" [mapTypeControl]='true' [fullscreenControl]='true' [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng">
+        <agm-info-window>Eide Fysioterapi</agm-info-window>
+      </agm-marker>
+    </agm-map>
   </div>
 </div>
-
-<div style="height: 250px"> </div>
+<div style="height: 300px"> </div>
