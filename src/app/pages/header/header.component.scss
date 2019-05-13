@@ -1,0 +1,60 @@
+  .header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    color: #f1f1f1;
+    width: 60%;
+    position: fixed;
+    height: 80px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+.header.close-topBar{
+  transition: all 0.3s;
+  box-shadow: rgba(0,0,0,0.07) 0px 4px 10px 0px;
+  height: 55px; 
+  background-color: rgba(242, 245, 247, 1);
+
+}
+
+.logo{
+  padding: 0 0 0 5rem;
+  margin-top: 1rem 0;
+  vertical-align: middle;
+  height: 60px;
+}
+.logo.close-topBar{
+  height: 45px;
+  transition: all 0.3s;
+}
+
+
+.hamburger {
+    outline: none;
+    position: relative;
+    height: 100%;
+    padding: 0 5rem 0 0;
+
+}
+
+
+@media (max-width: 1320px) {
+  .header{
+    width: 100%;
+  }
+  .hamburger{
+    padding-right: 1rem;
+  }
+  .logo{
+    padding-left: 1rem;
+    margin:0;
+  }
+  .navLink{
+    font-size: 18px;
+  }
+  .logo.close-topBar{
+    height: 30px;
+  }
+}

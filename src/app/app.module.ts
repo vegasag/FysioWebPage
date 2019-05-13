@@ -9,6 +9,9 @@ import { EmployeesComponent } from './pages/employees/employees.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
+import { EscCancelationDirective } from './directives/esc-cancelation.directive';
+import { HeaderComponent } from './pages/header/header.component';
+import { HamburgerClickService } from './services/hamburger-click.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { AgmCoreModule } from '@agm/core';
     ContactUsComponent,
     NavigatorComponent,
     EmployeesComponent,
-    FooterComponent
+    FooterComponent,
+    EscCancelationDirective,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,7 @@ import { AgmCoreModule } from '@agm/core';
       apiKey: 'AIzaSyBoL1-bbuhOldVopYxMCl1X_fDUeoJnY84'
     }),
   ],
-  providers: [],
+  providers: [HamburgerClickService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
