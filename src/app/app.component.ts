@@ -1,15 +1,9 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   trigger,
   transition,
-  style,
-  group,
   query,
-  animate,
-  stagger,
-  state,
-  keyframes,
-  animateChild
+  animateChild,
 } from '@angular/animations';
 
 @Component({
@@ -29,9 +23,19 @@ import {
 export class AppComponent {
   showNavigationMenu = false;
   ngOnChanges(){
-    console.log(this.showNavigationMenu);
+
   }
   ngOnInit(){
-    console.log(this.showNavigationMenu);
+  }
+  
+  toggleNavMenu(){
+    this.showNavigationMenu = !this.showNavigationMenu;
+    const scopeOverflow = this.showNavigationMenu ? "hidden" : "auto";
+    document.body.style.overflow = scopeOverflow;
+  }
+
+  cancelNavMenu(){
+    this.showNavigationMenu = false;
+    document.body.style.overflow = "auto";
   }
 }

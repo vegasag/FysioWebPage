@@ -3,13 +3,13 @@
         <img src="/assets/images/massasje.webp" onerror="this.onerror=null; this.src='/assets/images/massasje.jpg'" alt="Massasje" style="width:100%" />
     </div>
     <div class="main-content">
-        <app-header (ExploreMenu)="showNavigationMenu = true"></app-header>
+        <app-header (ExploreMenu)="toggleNavMenu()"></app-header>
         <app-landing-page></app-landing-page>
         <app-employees></app-employees>
         <app-contact-us></app-contact-us>
         <app-footer></app-footer>
         <div @animate>
-            <app-navigator *ngIf="showNavigationMenu" (cancellation)="showNavigationMenu = false"></app-navigator>
+            <app-navigator *ngIf="showNavigationMenu" (cancellation)="cancelNavMenu()"></app-navigator>
         </div>
     </div>
 </div>

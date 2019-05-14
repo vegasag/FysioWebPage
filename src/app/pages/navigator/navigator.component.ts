@@ -69,16 +69,10 @@ export class NavigatorComponent implements OnInit {
     { displayName: 'Om oss', href: '#OmOss' },
     { displayName: 'Kontakt oss', href: '#KontaktOss' },
   ];
-  isOpen: boolean = false;
   @Output('cancellation') cancellation = new EventEmitter();
 
-  constructor(private HamburgerClickService: HamburgerClickService) { 
-    HamburgerClickService.listenToButtonClick.subscribe( x => this.closeMenu());
-   }
-  
-  closeMenu(){
-    this.cancellation.emit();
-  }
+  constructor(private HamburgerClickService: HamburgerClickService) { }
+
 
   ngOnInit() {}
   onBgClick() {
