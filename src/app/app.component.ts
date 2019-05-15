@@ -22,6 +22,11 @@ import {
 })
 export class AppComponent {
   showNavigationMenu = false;
+
+  testing = function (e){
+    e.preventDefault();
+  }
+
   ngOnChanges(){
 
   }
@@ -30,12 +35,24 @@ export class AppComponent {
   
   toggleNavMenu(){
     this.showNavigationMenu = !this.showNavigationMenu;
-    const scopeOverflow = this.showNavigationMenu ? "hidden" : "auto";
-    document.body.style.overflow = scopeOverflow;
+    const toggleScrollabilityOnScreen = this.showNavigationMenu ? "hidden" : "auto";
+    document.body.style.overflow = toggleScrollabilityOnScreen;
+    this.toggleScrollabilityOnPhone(this.showNavigationMenu);
+  }
+  
+
+  toggleScrollabilityOnPhone(active){
+    if (active == true) {
+      window.addEventListener("touchmove", this.testing, {passive: false});
+    }
+    else {
+      window.removeEventListener("touchmove", this.testing, false);
+    }
   }
 
   cancelNavMenu(){
-    this.showNavigationMenu = false;
     document.body.style.overflow = "auto";
+    this.showNavigationMenu = false;
+    this.toggleScrollabilityOnPhone(this.showNavigationMenu);
   }
 }
