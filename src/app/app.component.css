@@ -1,6 +1,7 @@
 .main-content{
     width: 60%;
     float: right;
+    position: relative;
 }
 
 .side-header {
@@ -8,6 +9,13 @@
     height: 100vh;
     position: sticky;
     top: 0;
+}
+
+img{
+    width: 100%;
+    object-position: center;  
+    min-height: 100vh;
+    object-fit: cover;
 }
 
 .main {

@@ -1,13 +1,15 @@
-<div class="header" [ngClass]="{'close-topBar':shadowLineVisible}">
+<div class="header-bg" [ngClass]="{'close-topBar':shadowLineVisible}">
+  <div class="header-container">
+
     <a href=#Forside>
-      <img class="logo left"  [ngClass]="{'close-topBar':shadowLineVisible}" [ngClass]="{'open-topBar':!shadowLineVisible}" src="/assets/images/logo.svg"/>
+      <img class="logo left" [ngClass]="{'close-topBar':shadowLineVisible}"
+        [ngClass]="{'open-topBar':!shadowLineVisible}" src="/assets/images/logo.svg" />
     </a>
-    <button (click)="exploreMenuClick()" [ngClass]="{'is-active': isOpen}" class="hamburger hamburger--spin" type="button">
+    <button (click)="exploreMenuClick()" [ngClass]="{'is-active': isOpen}" class="hamburger hamburger--spin"
+      type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
   </div>
-  
-  
-  
+</div>

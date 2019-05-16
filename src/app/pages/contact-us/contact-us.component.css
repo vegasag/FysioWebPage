@@ -13,15 +13,15 @@
 
 agm-map {
   height: 400px;
-  width: 80%;
+  width: 100%;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   agm-map {
     height: 300px;
     width: 100%;
   }
-}
+} */
 @media (max-width: 730px) {
   .side {
     flex: 100%;
