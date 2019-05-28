@@ -2,7 +2,7 @@
   (click)="onBgClick()">
   <div class="navLinks" @slideIn>
     <div *ngFor="let nav of navLinks" class="navLink">
-      <a class="refBox" href={{nav.href}} alt="navigation-boxes">
+      <a class="refBox" href={{nav.href}} target={{nav.target}} alt="navigation-boxes">
         {{nav.displayName}}
       </a>
     </div>

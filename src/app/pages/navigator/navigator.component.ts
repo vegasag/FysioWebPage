@@ -68,6 +68,7 @@ export class NavigatorComponent implements OnInit {
     { displayName: 'Hjem', href: '#Forside' },
     { displayName: 'Om oss', href: '#OmOss' },
     { displayName: 'Kontakt oss', href: '#KontaktOss' },
+    { displayName: 'Priser', href: "https://www.eide.kommune.no/_f/p1/i77769bc7-ea73-4190-a225-9895c7823786/priser-pa-fysioterapitjenester-kommunal-avtale.pdf", target:"_blank"}
   ];
   @Output('cancellation') cancellation = new EventEmitter();
 
