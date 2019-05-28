@@ -49,21 +49,21 @@
 }
 
 
-@media (max-width: 1320px) {
+@media (max-width: 1060px) {
   .header-bg{
     width: 100%;
   }
   .hamburger{
     padding-right: 1rem;
   }
-  .logo{
-    padding-left: 1rem;
-    margin:0;
-  }
+  // .logo{
+  //   padding-left: 1rem;
+  //   margin:0;
+  // }
   .navLink{
     font-size: 18px;
   }
-  .logo.close-topBar{
-    height: 30px;
-  }
+  // .logo.close-topBar{
+  //   height: 30px;
+  // }
 }

@@ -11,11 +11,16 @@
     top: 0;
 }
 
-img{
+.side-header > img{
     width: 100%;
-    object-position: center;  
+    object-position: center;
     min-height: 100vh;
     object-fit: cover;
+    top:0;
+}
+
+.small-image {
+    display: none;
 }
 
 .main {
@@ -23,7 +28,7 @@ img{
     flex-wrap: wrap;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1060px) {
     .main-content{
         width: 100%;
         float: right;
@@ -31,4 +36,23 @@ img{
     .side-header{
         display: none;
     }
+
+    .small-image {
+        display: block;
+        background-image: url("/assets/images/massasje-small.webp");
+        width: 100%;
+        height: 355px!important; 
+        background-size: cover;
+        background-position: center center;
+    }
+    .small-image > img {
+        min-height: 20vh;
+    }
+}
+
+@media (max-width: 650px) {
+    .small-image{
+        height: 200px!important;
+    }
+
 }

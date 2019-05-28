@@ -18,6 +18,8 @@
 
 
 img{
+  height: 205px;
+  width: 205px;
   max-height: 100%;
   /* box-shadow: 10px 10px 5px rgba(0,0,0,0.6); */
 }
