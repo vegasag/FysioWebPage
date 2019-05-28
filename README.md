@@ -1,7 +1,6 @@
 # FysioWebPage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
-Uses Node.js. 
+Is an website made for Eide Fysioterapi. Available at eide-fysioterapi.no 
 
 ## Development server
 
