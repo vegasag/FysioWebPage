@@ -10,6 +10,14 @@ export class HeaderComponent implements OnInit {
   @Output() ExploreMenu = new EventEmitter();
   @Input() isOpen: boolean;
 
+  staticNavLinks = [
+    { displayName: 'Hjem', href: '#Forside' },
+    { displayName: 'Om oss', href: '#OmOss' },
+    { displayName: 'Kontakt oss', href: '#KontaktOss' },
+    { displayName: 'Priser', href: "https://www.eide.kommune.no/_f/p1/i77769bc7-ea73-4190-a225-9895c7823786/priser-pa-fysioterapitjenester-kommunal-avtale.pdf", target:"_blank"}
+  ];
+
+
   shadowLineVisible: boolean = false;
   isSmallScreen: boolean = false;
   isLargeScreen: boolean = false;
@@ -55,7 +63,7 @@ export class HeaderComponent implements OnInit {
       pixelHeightBeforeShowLine = 50 
     }
     else {
-      pixelHeightBeforeShowLine = 150;
+      pixelHeightBeforeShowLine = 75;
     }
     let pageYPosition = window.pageYOffset || document.documentElement.scrollTop
     if (pageYPosition < pixelHeightBeforeShowLine) {

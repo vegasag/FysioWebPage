@@ -50,9 +50,13 @@
     }
 }
 
+@media (max-width: 800px) {
+    .small-image{
+        height: 275px!important;
+    }
+}
 @media (max-width: 650px) {
     .small-image{
         height: 200px!important;
     }
-
 }
