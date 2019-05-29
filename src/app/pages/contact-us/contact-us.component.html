@@ -32,9 +32,9 @@
     <h2> Kart </h2>
   </div>
   <div class="row">
-    <agm-map [zoom]="zoom" [mapTypeControl]='true' [fullscreenControl]='true' [latitude]="lat" [longitude]="lng">
+    <agm-map [zoom]="zoom" [mapTypeControl]='true' [fullscreenControl]='true' [latitude]="lat" [longitude]="lng" [scrollwheel]="false" [mapDraggable]="false">
       <agm-marker [latitude]="lat" [longitude]="lng">
-        <agm-info-window>Eide Fysioterapi</agm-info-window>
+        <agm-info-window>Rådhusvegen 18, Eide Fysioterapi</agm-info-window>
       </agm-marker>
     </agm-map>
   </div>
