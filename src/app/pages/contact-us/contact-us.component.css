@@ -22,8 +22,18 @@ agm-map {
     width: 100%;
   }
 } */
-@media (max-width: 730px) {
-  .side {
+@media (max-width: 800px) {
+  .åpningstider {
+    flex: 18%;
+  }
+}
+@media (max-width: 650px) {
+  .åpningstider {
+    flex: 10%;
+  }
+}
+@media (max-width: 520px) {
+  .åpningstider {
     flex: 100%;
   }
 }

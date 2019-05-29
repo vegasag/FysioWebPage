@@ -56,8 +56,9 @@ img{
     margin-right: auto;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 440px) {
   .text{
     flex: 100%;
+    padding-left: 0;
   }
 }
