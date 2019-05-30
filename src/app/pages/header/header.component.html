@@ -1,10 +1,10 @@
 <div class="header-bg" [ngClass]="{'close-topBar':shadowLineVisible}">
   <div class="header-container">
     <a href=#Forside alt="Forside">
-      <img class="logo" [ngClass]="{'close-topBar':shadowLineVisible}"
+      <img class="logo" aria-label="Logo. Klikk for å manøvrere til forsiden" [ngClass]="{'close-topBar':shadowLineVisible}"
         src="/assets/images/logo.svg" alt="Logo" />
     </a>
-    <button (click)="exploreMenuClick()" [ngClass]="{'is-active': isOpen}" class="hamburger hamburger--spin"
+    <button aria-label="Toggle menu to open" (click)="exploreMenuClick()" [ngClass]="{'is-active': isOpen}" class="hamburger hamburger--spin"
       type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
@@ -12,7 +12,7 @@
     </button>
     <ul class="nav" [ngClass]="{'text-CloseTopBar':shadowLineVisible}" >
       <li *ngFor="let nav of staticNavLinks">
-        <a href={{nav.href}} target={{nav.target}}>{{nav.displayName}}</a>
+        <a href={{nav.href}} target={{nav.target}} attr.aria-label={{nav.arialabel}}>{{nav.displayName}}</a>
       </li>
     </ul>
   </div>

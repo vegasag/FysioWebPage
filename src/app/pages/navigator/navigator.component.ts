@@ -65,10 +65,10 @@ import { HamburgerClickService } from 'src/app/services/hamburger-click.service'
 
 export class NavigatorComponent implements OnInit {
   navLinks = [
-    { displayName: 'Hjem', href: '#Forside' },
-    { displayName: 'Om oss', href: '#OmOss' },
-    { displayName: 'Kontakt oss', href: '#KontaktOss' },
-    { displayName: 'Priser', href: "https://www.eide.kommune.no/_f/p1/i77769bc7-ea73-4190-a225-9895c7823786/priser-pa-fysioterapitjenester-kommunal-avtale.pdf", target:"_blank"}
+    { displayName: 'Hjem', href: '#Forside', arialabel: 'Navigere til forsiden' },
+    { displayName: 'Om oss', href: '#OmOss', arialabel: 'Navigere til informasjon om oss' },
+    { displayName: 'Kontakt oss', href: '#KontaktOss', arialabel: 'Navigere til kontaktinformasjon' },
+    { displayName: 'Priser', href: "https://www.eide.kommune.no/_f/p1/i77769bc7-ea73-4190-a225-9895c7823786/priser-pa-fysioterapitjenester-kommunal-avtale.pdf", target:"_blank", arialabel: 'Ny side med pdf-side av prisene'}
   ];
   @Output('cancellation') cancellation = new EventEmitter();
 
