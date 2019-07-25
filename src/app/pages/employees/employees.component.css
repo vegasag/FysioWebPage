@@ -5,7 +5,7 @@
   }
   
   .flex-container > div {
-    width: 100%;
+    /* width: 100%; */
     margin: 10px;
     text-align: center;
   }
@@ -13,7 +13,12 @@
 .row {  
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 15px 0;
+}
+
+.column{
+  flex-direction: column;
 }
 
 
@@ -31,8 +36,9 @@ img{
 
 
 .text {
-  flex: 50%;
-  padding-left: 15px;
+  flex: 20%;
+  text-align: center;
+
 }
 
 .text > h2{
