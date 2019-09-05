@@ -12,6 +12,8 @@ import { AgmCoreModule } from '@agm/core';
 import { EscCancelationDirective } from './directives/esc-cancelation.directive';
 import { HeaderComponent } from './pages/header/header.component';
 import { HamburgerClickService } from './services/hamburger-click.service';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { HamburgerClickService } from './services/hamburger-click.service';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBoL1-bbuhOldVopYxMCl1X_fDUeoJnY84'
     }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [HamburgerClickService],
   bootstrap: [AppComponent]
