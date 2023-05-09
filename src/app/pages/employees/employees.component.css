@@ -68,3 +68,9 @@ img{
     padding-left: 0;
   }
 }
+
+.empty-elin-image{
+  height: 205px;
+  width: 205px;
+  max-height: 100%;
+}
